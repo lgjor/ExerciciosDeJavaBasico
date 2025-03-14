@@ -45,6 +45,7 @@ public class Pessoa {
     */
     public int getIdade() {
         int anoAtual = AnoAtual.main(null);
-        return anoAtual - anoNascimento;
+        idade = anoAtual - anoNascimento;
+        return idade;
     }
 }
