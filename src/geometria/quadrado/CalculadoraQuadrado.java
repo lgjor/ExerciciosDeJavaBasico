@@ -4,9 +4,10 @@
  */
 package geometria.quadrado;
 
+import java.util.InputMismatchException;
 /**
  * This class provides methods to perform calculations related to squares.
- * It includes functionalities to calculate the area and perimeter of a square.
+ * It includes functionalities to calculate the area of a square.
  * 
  * The class uses the Scanner class from java.util package to read input from the user.
  * 
@@ -19,7 +20,7 @@ package geometria.quadrado;
  * }
  * </pre>
  * 
- * @author 
+ * @author Lucas Aú Desviante
  * @version 1.0
  */
 import java.util.Scanner;
@@ -58,8 +59,7 @@ public class CalculadoraQuadrado {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o tamanho do lado do quadrado: ");
-        double lado = scanner.nextDouble();
+        double lado = validaLado(scanner, "Digite o tamanho do lado do quadrado: ");
 
         Quadrado quadrado = new Quadrado(lado);
         double area = quadrado.calcularArea();
@@ -67,6 +67,31 @@ public class CalculadoraQuadrado {
         System.out.println("A área do quadrado é: " + area);
 
         scanner.close();
+    }
+
+    /**
+     * Valida a entrada do usuário para garantir que seja um número positivo.
+     * 
+     * @param scanner  o objeto Scanner usado para ler a entrada do usuário
+     * @param mensagem a mensagem a ser exibida ao solicitar a entrada do usuário
+     * @return o valor positivo inserido pelo usuário
+     * @throws InputMismatchException se a entrada do usuário não for um número válido
+     */
+    public static double validaLado(Scanner scanner, String mensagem) {
+        double valor;
+        while (true) {
+            try {
+                System.out.print(mensagem);
+                valor = scanner.nextDouble();
+                if (valor > 0) {
+                    return valor;
+                }
+                System.out.println("O valor deve ser maior que zero.");
+            } catch (InputMismatchException e) {
+                System.out.println("Digite um número válido.");
+                scanner.nextLine(); // Clear the invalid input
+            }
+        }
     }
 
 }
