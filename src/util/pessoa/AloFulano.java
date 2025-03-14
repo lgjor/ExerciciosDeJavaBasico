@@ -40,7 +40,7 @@ public class AloFulano {
         System.out.print("Digite seu ano de nascimento: ");
         int anoNascimento = sc.nextInt();
         sc.close();
-        Pessoa fulano = new Pessoa(nome, anoNascimento);
+        Pessoa fulano = new Pessoa(nome, 0, anoNascimento);
         imprimirMensagem(fulano);
     }
 
