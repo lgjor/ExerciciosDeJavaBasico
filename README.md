@@ -9,5 +9,9 @@ Exercícios de Java Básico do Bootcamp Java Cloud Native da DIO em parceria com
    - Folder structure: src / geometria / quadrado
 
 3. Escreva um código que receba a base e a alturade um retângulo, calcule sua área e exiba na tela: Fórmula: área=base X altura
+   - Folder structure: src / geometria / retangulo
 
-4. Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas
+4. Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas.
+   - Folder structure: src / util / pessoa / DiferencaDeIdade
+
+Obs.: Para a resolução dos exercícios, foi criado o método validaValorInt no pacote util, este método só aceita valores inteiros válidos e positivos.
