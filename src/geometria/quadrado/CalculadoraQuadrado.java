@@ -4,7 +4,6 @@
  */
 package geometria.quadrado;
 
-import java.util.InputMismatchException;
 import util.ValidaValorInt;
 /**
  * This class provides methods to perform calculations related to squares.

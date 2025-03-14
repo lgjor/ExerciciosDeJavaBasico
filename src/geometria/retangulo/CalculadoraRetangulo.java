@@ -4,7 +4,6 @@
  */
 package geometria.retangulo;
 
-import java.util.InputMismatchException;
 import util.ValidaValorInt;
 import java.util.Scanner;
 /**
