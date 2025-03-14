@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ValidaValorDouble {
-    public static double ValidaValorDouble(Scanner scanner, String mensagem) {
+    public static double validaValorDouble(Scanner scanner, String mensagem) {
         while (true) {
             try {
                 System.out.print(mensagem);

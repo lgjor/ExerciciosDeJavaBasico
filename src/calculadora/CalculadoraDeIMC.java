@@ -11,8 +11,8 @@ public class CalculadoraDeIMC {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double altura = ValidaValorDouble.ValidaValorDouble(scanner, "Digite sua altura: ");
-        double peso = ValidaValorDouble.ValidaValorDouble(scanner, "Digite seu peso: ");
+        double altura = ValidaValorDouble.validaValorDouble(scanner, "Digite sua altura: ");
+        double peso = ValidaValorDouble.validaValorDouble(scanner, "Digite seu peso: ");
         scanner.close();
         CalcularIMC(altura, peso);
     }
