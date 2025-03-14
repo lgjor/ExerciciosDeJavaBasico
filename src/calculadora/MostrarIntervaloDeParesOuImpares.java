@@ -34,7 +34,7 @@ public class MostrarIntervaloDeParesOuImpares {
 
     public static void ExibirIntervaloDeImpares(int numero01, int numero02){
         System.out.println("--- Exibindo intervalo de números Ímpares");
-        for (int i = numero01; i <= numero02; i++) {
+        for (int i = numero02; i >= numero01; i--) {
             if (i % 2 != 0) {
                 System.out.println(i);
             }
@@ -43,7 +43,7 @@ public class MostrarIntervaloDeParesOuImpares {
     }
     public static void ExibirIntervaloDePares(int numero01, int numero02){
         System.out.println("--- Exibindo intervalo de números Pares ---");
-        for (int i = numero01; i <= numero02; i++) {
+        for (int i = numero02; i >= numero01; i--) {
             if (i % 2 == 0) {
                 System.out.println(i);
             }
