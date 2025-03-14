@@ -14,6 +14,6 @@ public class NNumeros {
         int numero02;
         do{
             numero02 = ValidaValorInt.validaValorInt(scanner, "Informe outro número: ");
-        } while( numero02 % numero01 != 0);
+        } while( numero02 < numero01 && numero02 % numero01 != 0);
     }
 }
